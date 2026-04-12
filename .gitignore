@@ -1,0 +1,8 @@
+*.mp3
+*.wav
+mp3/
+.env/
+__pycache__/
+*.py[cod]
+*.pkl
+.venv/

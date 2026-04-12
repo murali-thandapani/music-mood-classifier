@@ -1,0 +1,21 @@
+# ─────────────────────────────────────────────────────────────
+#  ML Mood Music Player — requirements.txt
+#  Install with:  pip install -r requirements.txt
+# ─────────────────────────────────────────────────────────────
+
+# Audio analysis & feature extraction
+librosa>=0.10.0          # MFCC, chroma, spectral contrast, tonnetz, tempo, RMS
+soundfile>=0.12.0        # Audio file I/O backend used by librosa
+audioread>=3.0.0         # Fallback audio decoding for librosa (MP3 support)
+
+# Machine learning
+scikit-learn>=1.3.0      # RandomForestClassifier, StandardScaler, cross-validation
+numpy>=1.24.0            # Numerical arrays and feature vector operations
+scipy>=1.11.0            # Signal processing (used internally by librosa)
+joblib>=1.3.0            # Save/load trained model (.pkl), parallel tree fitting
+
+# Audio playback
+pygame>=2.5.0            # MP3 playback engine and audio mixer
+
+# MP3 tag reading
+mutagen>=1.47.0          # Read ID3 tags (title, artist, duration) from MP3 files
